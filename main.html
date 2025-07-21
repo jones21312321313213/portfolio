@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="header_style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- HEADER NAVBAR -->
+    <header>
+       <div id="colorStrip" class="bg-info position-fixed top-0 w-100"></div>
+      <nav class="navbar navbar-expand-lg fixed-top bg-info partial" id="fixedNavbar">
+        <div class="container-fluid ">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex align-items-center flex-column flex-lg-row w-100">
+              <a class="navbar-brand no-hover-effect me-lg-3 mb-3 mb-lg-0 fs-3" href="#">JA</a>
+              <ul class="navbar-nav nav-pills flex-column flex-lg-row align-items-center w-100">
+                <li class="nav-item"><a href="#" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Social</a></li>
+              </ul>
+            </div>
+            <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded">Contact Me</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+  <!-- MAIN -->
+  <main class="flex-grow-1">
+    <div class="container-fluid text-center" id="abme">
+      <nav class="navbar navbar-expand-lg " id = "duplicateNavbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler position-fixed position-lg-absolute end-0 mt-2 me-2" 
+                  type="button" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#navbarPopup"
+                  style="z-index: 1030; right: max(0.5rem, env(safe-area-inset-right))">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- modal -->
+         <div class="modal fade" id="navbarPopup" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 id = "modalLogo">JA</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Projects</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- 2nd header -->
+          <div class="collapse navbar-collapse" id="navbarNav2">
+            <div class="d-flex align-items-center flex-column flex-lg-row w-100">
+              <a class="navbar-brand no-hover-effect me-lg-3 mb-3 mb-lg-0 fs-3" href="#">JA</a>
+              <ul class="navbar-nav nav-pills flex-column flex-lg-row align-items-center w-100">
+                <li class="nav-item"><a href="#ok" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#ok" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#ok" class="nav-link">Social</a ></li>
+              </ul>
+            </div>
+            <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded">Contact Me</button>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class = "container d-flex align-items-center">
+        <div style = "width: 30%;  margin: 100px auto 20px auto;">
+          <img src="https://picsum.dev/400/400" class = "img-fluid border border-dark border-3 rounded-circle" alt="pic">
+        </div>
+      </div>
+
+
+      <section id = "about">
+        <p id = "about-me-text" class = "text-center fs-1" >Hey there, I am wobbly squigilly and I am currently studying Bachelor Of Science in Computer Science.<br> Here are the skills that I have learned and my works that I have worked on.</p>
+      </section>
+      
+      <section id = "ok">
+        <h1 class="text-primary mt-4">Sup</h1>
+        <h1 class="text-primary mt-4">Sup</h1>
+        <h1 class="text-primary mt-4">Sup</h1>
+        <h1 class="text-primary mt-4">Sup</h1>
+        <h1 class="text-primary mt-4">Sup</h1>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-info text-center py-3 mt-auto">
+    <h1>Hellos</h1>
+  </footer>
+
+  
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="hidden_header.js"></script>
+
+</body>
+</html>

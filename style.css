@@ -1,0 +1,50 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fonts */
+#abme{
+    margin-top: 80px;
+}
+
+#fixedNavbar {
+  position: fixed;
+  top: -90%; /* Mostly hidden (only 10% peeking out) */
+  transition: top 0.2s ease-in-out;
+  z-index: 1030;
+  width: 100%;
+}
+
+#fixedNavbar.partial {
+  top: -90%; /* Show just the top 10% of the navbar */
+}
+
+#fixedNavbar.visible {
+  top: 0; /* Slide down into full view */
+}
+
+#modalLogo{
+  display:flex;
+  margin-left: 47.5%;
+}
+
+#btn-close{
+  width: 1000px;
+}
+
+#about-me-text {
+  font-size: clamp(1rem, 4vw, 2.5rem); /* Adjust values as needed */
+  text-align: center;
+}
+
+#about{
+  margin:0 auto;
+  width: 90%;
+  max-width: 1000px;
+} 
+
+/* 
+.img-fluid{
+    width: 200px;
+    height: 200px;   
+}
+ */
+
