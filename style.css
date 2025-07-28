@@ -5,6 +5,11 @@
     margin-top: 80px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 #fixedNavbar {
   position: fixed;
   top: -90%; /* Mostly hidden (only 10% peeking out) */
@@ -82,4 +87,10 @@ h6{
 .no-underline{
   text-decoration: none;
   color:inherit;
+}
+
+
+#miniProj {
+  background-color: blue;
+  margin-bottom: 0;
 }

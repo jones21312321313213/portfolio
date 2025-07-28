@@ -23,6 +23,6 @@
 }
 
 .no-select {
-  user-select: none;        /* Prevent text selection */
-  cursor: default;          /* Keeps it as a regular arrow cursor */
+  user-select: none;       
+  cursor: default;         
 }

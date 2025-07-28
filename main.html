@@ -25,7 +25,7 @@
               <a class="navbar-brand no-hover-effect me-lg-3 mb-3 mb-lg-0 fs-3" href="#">JA</a>
               <ul class="navbar-nav nav-pills flex-column flex-lg-row align-items-center w-100">
                 <li class="nav-item"><a href="#" class="nav-link">About me</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Social</a></li>
               </ul>
             </div>
@@ -60,7 +60,7 @@
                     <div class="modal-body p-4">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">About</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Projects</a></li>
+                            <li class="nav-item"><a href="#project" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Projects</a></li>
                             <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Socials</a></li>
                             <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Contact</a></li>
                         </ul>
@@ -74,7 +74,7 @@
               <a class="navbar-brand no-hover-effect me-lg-3 mb-3 mb-lg-0 fs-3" href="#">JA</a>
               <ul class="navbar-nav nav-pills flex-column flex-lg-row align-items-center w-100">
                 <li class="nav-item"><a href="#ok" class="nav-link">About me</a></li>
-                <li class="nav-item"><a href="#ok" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#ok" class="nav-link">Social</a ></li>
               </ul>
             </div>
@@ -137,11 +137,11 @@
       </section>
 
 
-    <section id="projects">
-        <h1 class="text-primary mt-4">My Projects</h1>
+    <section id="projects" class = "mb-5">
+      <h1 class="text-primary mt-5" id = "project">Projects</h1>
         <div class="container-fluid no-select">
           <div class="row g-3 justify-content-around">
-
+            <!-- GamGo -->
             <div class="col-auto">
               <a href="https://github.com/jones21312321313213/GameGo" class="no-underline" target="_blank">
                 <div class="card hover-card" style="width: 24rem;">
@@ -166,9 +166,9 @@
                 </div>
               </a>
             </div>
-
-
+            <!-- Stictactics -->
             <div class="col-auto">
+              <a href="https://github.com/jones21312321313213/demoGame4OOP.git" class="no-underline" target="_blank">
               <div class="card hover-card" style="width: 24rem;">
                 <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="SticTactics">
                 <div class="card-body">
@@ -183,16 +183,72 @@
                   </div>
                 </div>
               </div>
+              </a>
             </div>
 
           </div>
         </div>
     </section>
+
+
+    <section class="mini-projects" id = "miniProj">
+      <h1>Mini Projects</h1>
+        <div class="container-fluid no-select">
+          <div class="row g-3 justify-content-around">
+            <!-- Converter -->
+            <div class="col-auto">
+              <a href="https://github.com/jones21312321313213/CS132-FINAL-PROJECT.git" class="no-underline" target="_blank">
+                <div class="card hover-card" style="width: 24rem;">
+                  <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="GameGo">
+                  <div class="card-body">
+                    <h5 class="card-title">Converter</h5>
+                    <p class="card-text">
+                     A lightweight tool built to convert numbers between decimal, binary, octal, and hexadecimal formats efficiently.
+                    </p>
+                    <div class="tech-used">
+                      <span class="badge bg-secondary hover-badge">
+                        <i class="devicon-html5-plain"></i> Html
+                      </span>
+                      <span class="badge bg-secondary hover-badge">     
+                        <i class="devicon-css3-plain"></i> Css
+                      </span>
+                      <span class="badge bg-secondary hover-badge">
+                        <i class="devicon-javascript-plain"></i> Javascript
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Stictactics -->
+            <div class="col-auto">
+              <a href="https://github.com/jones21312321313213/CS243-FINAL-PROJECT.git" class="no-underline" target="_blank">
+              <div class="card hover-card" style="width: 24rem;">
+                <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="SticTactics">
+                <div class="card-body">
+                  <h5 class="card-title">Grocery item-list</h5>
+                  <p class="card-text">
+                    Collaboratively developed a 2-player fighting game using OOP principles, featuring unique characters, special abilities, and customizable arenas.
+                  </p>
+                  <div class="tech-used">
+                    <span class="badge bg-secondary hover-badge">
+                      Assembly
+                    </span>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+    </section>
     </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-info text-center py-3 mt-auto">
+  <footer class="bg-info text-center  ">
     <h1>Hellos</h1>
   </footer>
 
