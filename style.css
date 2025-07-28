@@ -57,17 +57,6 @@
   border-radius: 20px;
 }
 
-/* for the skills to hoveru up*/
-.hover-up {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.hover-up:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 30px 50px 20px rgba(0, 0, 0, 0.5);
-}
-/*  */
-
 
 .progLang{
   height: 120px;
@@ -80,13 +69,17 @@ h6{
 
 
 .badge{
-  margin-left: 20px;
+  margin-left: 0px;
+  font-size: 14px;
 }
 
-/* 
-.img-fluid{
-    width: 200px;
-    height: 200px;   
+.tech-used{
+  margin-top: 25px;
 }
- */
 
+
+
+.no-underline{
+  text-decoration: none;
+  color:inherit;
+}

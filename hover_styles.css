@@ -1,0 +1,28 @@
+.hover-up {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-up:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 50px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hover-card:hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 30px 50px  rgba(0, 0, 0, 0.3);
+}
+
+
+.hover-badge{
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-badge:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.no-select {
+  user-select: none;        /* Prevent text selection */
+  cursor: default;          /* Keeps it as a regular arrow cursor */
+}

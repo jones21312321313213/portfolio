@@ -7,6 +7,7 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="header_style.css">
+  <link rel="stylesheet" type="text/css" href="hover_styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
@@ -95,7 +96,7 @@
       </section>
       
       <section id = "skills">
-        <div class = "container-fluid border">
+        <div class = "container-fluid border no-select">
           <h1 class = "mt-4">My Skills</h1>
             <div class = "row">
               <div class = "col hover-up">  
@@ -136,44 +137,57 @@
       </section>
 
 
-      <section id = "projects">
-        <div class="container-fluid">
-          <h1 class="text-primary mt-4">My Projects</h1>
-
+    <section id="projects">
+        <h1 class="text-primary mt-4">My Projects</h1>
+        <div class="container-fluid no-select">
           <div class="row g-3 justify-content-around">
+
             <div class="col-auto">
-              <div class="card" style="width: 20rem;">
-                <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="GameGo">
+              <a href="https://github.com/jones21312321313213/GameGo" class="no-underline" target="_blank">
+                <div class="card hover-card" style="width: 24rem;">
+                  <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="GameGo">
+                  <div class="card-body">
+                    <h5 class="card-title">GameGo</h5>
+                    <p class="card-text">
+                      Developed a mobile app for gamers to discover, organize, and save favorite games using Firebase authentication and live game data from external APIs.
+                    </p>
+                    <div class="tech-used">
+                      <span class="badge bg-secondary hover-badge">
+                        <i class="devicon-kotlin-plain"></i> Kotlin
+                      </span>
+                      <span class="badge bg-secondary hover-badge">
+                        <i class="devicon-firebase-plain"></i> Firebase
+                      </span>
+                      <span class="badge bg-secondary hover-badge">
+                        <i class="devicon-androidstudio-plain"></i> Android Studio
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-auto">
+              <div class="card hover-card" style="width: 24rem;">
+                <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="SticTactics">
                 <div class="card-body">
-                  <h5 class="card-title">GameGo</h5>
+                  <h5 class="card-title">SticTactics</h5>
                   <p class="card-text">
-                    Developed a mobile app for gamers to discover, organize, and save favorite games using Firebase authentication and live game data from external APIs.
+                    Collaboratively developed a 2-player fighting game using OOP principles, featuring unique characters, special abilities, and customizable arenas.
                   </p>
                   <div class="tech-used">
-                    <span class="badge bg-secondary"><i class="devicon-kotlin-plain"></i> Kotlin</span>
-                    <span class="badge bg-secondary">Firebase</span>
-                    <span class="badge bg-secondary">Android Studio</span>
+                    <span class="badge bg-secondary hover-badge">
+                      <i class="devicon-java-plain"></i> Java
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-auto">
-              <div class="card" style="width: 20rem;">
-                <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">GameGo</h5>
-                  <p class="card-text">
-                    Developed a mobile app for gamers to discover, organize, and save favorite games using Firebase authentication and live game data from external APIs.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
-
+    </section>
     </div>
   </main>
 
