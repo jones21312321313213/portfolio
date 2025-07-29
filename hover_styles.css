@@ -1,17 +1,25 @@
 .hover-up {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #E6E6FA;
 }
 
 .hover-up:hover {
   transform: translateY(-5px);
-box-shadow: 0 10px 20px 8px rgba(255, 50, 70, 0.45);
-
+box-shadow: 0 10px 20px 8px rgba(255, 20, 147, 0.5);
 
 }
 
+
+
 .hover-card:hover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-box-shadow: 0 10px 20px 8px rgba(255, 50, 70, 0.45);
+  box-shadow: 0 12px 24px 10px rgba(255, 20, 147, 0.55); 
+}
+
+
+#card2.hover-card:hover {
+  box-shadow: 0 12px 24px 10px rgba(57, 255, 20, 0.55); 
+
 }
 
 

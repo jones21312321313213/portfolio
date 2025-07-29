@@ -1,5 +1,3 @@
-/* Style for Bootstrap nav-pills */
-
 
 #hey{
     padding-left: 250px;
@@ -14,7 +12,7 @@
 }
 
 #project {
-  scroll-margin-top: 100px; /* Adjust this based on your navbar height */
+  scroll-margin-top: 100px; 
 }
 
 #about-me-text{
@@ -25,15 +23,21 @@
   scroll-margin-top: 100px;
 }
 
+#fixedNavbar .nav-pills .nav-link::after{
+  background-color: aqua ;
+}
 
+#fixedNavbar{
+  background-color: #DE3163;
+}
 
+#navbarNav2{
+  margin-top: -30px;
+}
 
 .navbar-toggler-icon{
   width: 2rem;
   height: 1.5rem;
-}
-#navbarNav2{
-  margin-top: -30px;
 }
 
 .container-fluid{
@@ -75,14 +79,6 @@
   transition: height 0.5s ease;
 }
 
-#fixedNavbar .nav-pills .nav-link::after{
-  background-color: aqua ;
-}
-
-#fixedNavbar{
-  background-color: #DE3163;
-}
-
 /* Expand red fill on hover + change text color */
 .nav-pills .nav-link:hover::after {
   height: 100%;
@@ -92,28 +88,23 @@
   color: white;
 }
 
-/* Optional: Active link styling */
 .nav-pills .nav-link.active {
   background-color: #DE3163;
   color: white;
 }
 
-
-
 .nav-pills .nav-link.no-hover-effect {
-  color: black;             /* base color */
-  font-weight: bold;        /* optional style */
+  color: black;           
+  font-weight: bold;       
   position: static;
   background: none;
   transition: none;
 }
 
-/* Remove the ::after hover effect for JA */
+/* No hover for JA */
 .nav-pills .nav-link.no-hover-effect::after {
   display: none;
 }
-
-
 
 .custom-hover-invert {
   width: 150px;

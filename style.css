@@ -1,9 +1,11 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 /* Fonts */
-#abme{
-    margin-top: 80px;
-}
 
 html {
   scroll-behavior: smooth;
@@ -11,6 +13,22 @@ html {
 
 main{
   margin: -10px;
+}
+
+h1, h6{
+  font-family: 'Roboto Slab',sans-serif;
+}
+
+h6{
+  margin-top: 20px;
+}
+
+footer{
+  background-color: #E8E3E3;
+}
+
+#abme{
+  margin-top: 80px;
 }
 
 #fixedNavbar {
@@ -39,7 +57,8 @@ main{
 }
 
 #about-me-text {
-  font-size: clamp(1rem, 4vw, 2.5rem); /* Adjust values as needed */
+  font-family: 'Oswald',sans-serif;
+  font-size: clamp(1rem, 4vw, 2.5rem); 
   text-align: center;
 }
 
@@ -49,9 +68,16 @@ main{
   max-width: 1000px;
 } 
 
-
 #skills{
   background-color: #1C1B1B;
+}
+
+#name{
+  color: aqua;
+}
+#miniProj {
+  background-color: #1C1B1B;
+  margin-bottom: 0;
 }
 
 .white-text{
@@ -76,10 +102,6 @@ main{
   width: 120px;
 }
 
-h6{
-  margin-top: 20px;
-}
-
 
 .badge{
   margin-left: 0px;
@@ -100,7 +122,16 @@ h6{
 }
 
 
-#miniProj {
-  background-color: #1C1B1B;
-  margin-bottom: 0;
+.card-text{
+  font-family: 'Lora',sans-serif;
 }
+
+.badge{
+  font-family: 'Inconsolata',sans-serif;
+}
+.card-title{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 34px;
+}
+
+
