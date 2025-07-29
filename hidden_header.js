@@ -14,19 +14,24 @@ window.addEventListener("scroll", () => {
 });
 
 // for modal
- let sectionToScrollTo = null;
+let sectionToScrollTo = null;
 
-  document.querySelectorAll('[data-section]').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      sectionToScrollTo = link.getAttribute('data-section');
-    });
+document.querySelectorAll('[data-section]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevents default link jump
+    sectionToScrollTo = link.getAttribute('data-section');
+    // Trigger the dismiss manually after a tiny delay
+    setTimeout(() => {
+      const modal = bootstrap.Modal.getInstance(document.getElementById('navbarPopup'));
+      modal.hide();
+    }, 10);
   });
+});
 
-  const modal = document.getElementById('navbarPopup');
-  modal.addEventListener('hidden.bs.modal', () => {
-    if (sectionToScrollTo) {
-      document.querySelector(sectionToScrollTo)?.scrollIntoView({ behavior: 'smooth' });
-      sectionToScrollTo = null;
-    }
-  });
+const modal = document.getElementById('navbarPopup');
+modal.addEventListener('hidden.bs.modal', () => {
+  if (sectionToScrollTo) {
+    document.querySelector(sectionToScrollTo)?.scrollIntoView({ behavior: 'smooth' });
+    sectionToScrollTo = null;
+  }
+});

@@ -8,12 +8,21 @@
 }
 
 #colorStrip{
+  background-color: #DE3163	;
   height: 50px; 
   z-index: 1029;
 }
 
 #project {
   scroll-margin-top: 100px; /* Adjust this based on your navbar height */
+}
+
+#about-me-text{
+  scroll-margin-top:350px
+}
+
+#skills-text{
+  scroll-margin-top: 100px;
 }
 
 
@@ -59,11 +68,19 @@
   left: 0;
   width: 100%;
   height: 20%; /* initial strip */
-  background: red;
+  background: #DE3163;
   z-index: -1;
   transform: scaleY(1);
   transform-origin: bottom;
   transition: height 0.5s ease;
+}
+
+#fixedNavbar .nav-pills .nav-link::after{
+  background-color: aqua ;
+}
+
+#fixedNavbar{
+  background-color: #DE3163;
 }
 
 /* Expand red fill on hover + change text color */
@@ -77,7 +94,7 @@
 
 /* Optional: Active link styling */
 .nav-pills .nav-link.active {
-  background-color: red;
+  background-color: #DE3163;
   color: white;
 }
 
@@ -95,6 +112,8 @@
 .nav-pills .nav-link.no-hover-effect::after {
   display: none;
 }
+
+
 
 .custom-hover-invert {
   width: 150px;

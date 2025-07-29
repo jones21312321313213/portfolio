@@ -9,6 +9,9 @@ html {
   scroll-behavior: smooth;
 }
 
+main{
+  margin: -10px;
+}
 
 #fixedNavbar {
   position: fixed;
@@ -48,7 +51,12 @@ html {
 
 
 #skills{
-  background-color: red;
+  background-color: #1C1B1B;
+}
+
+.white-text{
+  color:white;
+  font-weight: bold;
 }
 
 .col{
@@ -82,7 +90,9 @@ h6{
   margin-top: 25px;
 }
 
-
+.badge{
+  background-color: green;
+}
 
 .no-underline{
   text-decoration: none;
@@ -91,6 +101,6 @@ h6{
 
 
 #miniProj {
-  background-color: blue;
+  background-color: #1C1B1B;
   margin-bottom: 0;
 }

@@ -17,16 +17,16 @@
 
   <!-- HEADER NAVBAR -->
     <header>
-       <div id="colorStrip" class="bg-info position-fixed top-0 w-100"></div>
-      <nav class="navbar navbar-expand-lg fixed-top bg-info partial" id="fixedNavbar">
+       <div id="colorStrip" class="position-fixed top-0 w-100"></div>
+      <nav class="navbar navbar-expand-lg fixed-top  partial" id="fixedNavbar">
         <div class="container-fluid ">
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="d-flex align-items-center flex-column flex-lg-row w-100">
               <a class="navbar-brand no-hover-effect me-lg-3 mb-3 mb-lg-0 fs-3" href="#">JA</a>
               <ul class="navbar-nav nav-pills flex-column flex-lg-row align-items-center w-100">
-                <li class="nav-item"><a href="#" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#about-me-text" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#skills-text" class="nav-link">Skills</a ></li>
                 <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Social</a></li>
               </ul>
             </div>
             <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded">Contact Me</button>
@@ -59,9 +59,9 @@
                     </div>
                     <div class="modal-body p-4">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">About</a></li>
-                            <li class="nav-item"><a href="#project" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Projects</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Socials</a></li>
+                            <li class="nav-item"><a href="#about-me-text" class="nav-link" data-bs-dismiss="modal" data-section="#about-me-text">About</a></li>
+                             <li class="nav-item"><a href="#skills-text" class="nav-link" data-bs-dismiss="modal" data-section="#skills-text">Skills</a></li>
+                            <li class="nav-item"><a href="#project" class="nav-link" data-bs-dismiss="modal" data-section="#project">Projects</a></li>
                             <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Contact</a></li>
                         </ul>
                     </div>
@@ -73,9 +73,9 @@
             <div class="d-flex align-items-center flex-column flex-lg-row w-100">
               <a class="navbar-brand no-hover-effect me-lg-3 mb-3 mb-lg-0 fs-3" href="#">JA</a>
               <ul class="navbar-nav nav-pills flex-column flex-lg-row align-items-center w-100">
-                <li class="nav-item"><a href="#ok" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#about-me-text" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#skills-text" class="nav-link">Skills</a ></li>
                 <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#ok" class="nav-link">Social</a ></li>
               </ul>
             </div>
             <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded">Contact Me</button>
@@ -97,7 +97,7 @@
       
       <section id = "skills">
         <div class = "container-fluid border no-select">
-          <h1 class = "mt-4">My Skills</h1>
+          <h1 class = "mt-4 white-text" >My Skills</h1>
             <div class = "row">
               <div class = "col hover-up">  
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" class = "progLang" />
@@ -152,13 +152,13 @@
                       Developed a mobile app for gamers to discover, organize, and save favorite games using Firebase authentication and live game data from external APIs.
                     </p>
                     <div class="tech-used">
-                      <span class="badge bg-secondary hover-badge">
+                      <span class="badge hover-badge">
                         <i class="devicon-kotlin-plain"></i> Kotlin
                       </span>
-                      <span class="badge bg-secondary hover-badge">
+                      <span class="badge  hover-badge">
                         <i class="devicon-firebase-plain"></i> Firebase
                       </span>
-                      <span class="badge bg-secondary hover-badge">
+                      <span class="badge hover-badge">
                         <i class="devicon-androidstudio-plain"></i> Android Studio
                       </span>
                     </div>
@@ -177,7 +177,7 @@
                     Collaboratively developed a 2-player fighting game using OOP principles, featuring unique characters, special abilities, and customizable arenas.
                   </p>
                   <div class="tech-used">
-                    <span class="badge bg-secondary hover-badge">
+                    <span class="badge hover-badge">
                       <i class="devicon-java-plain"></i> Java
                     </span>
                   </div>
@@ -187,14 +187,14 @@
             </div>
 
           </div>
-        </div>
+        </div>  
     </section>
 
 
     <section class="mini-projects" id = "miniProj">
-      <h1>Mini Projects</h1>
+      <h1 class = "white-text">Mini Projects</h1>
         <div class="container-fluid no-select">
-          <div class="row g-3 justify-content-around">
+          <div class="row g-3 justify-content-around mb-4">
             <!-- Converter -->
             <div class="col-auto">
               <a href="https://github.com/jones21312321313213/CS132-FINAL-PROJECT.git" class="no-underline" target="_blank">
@@ -205,14 +205,14 @@
                     <p class="card-text">
                      A lightweight tool built to convert numbers between decimal, binary, octal, and hexadecimal formats efficiently.
                     </p>
-                    <div class="tech-used">
-                      <span class="badge bg-secondary hover-badge">
+                    <div class="tech-used mt-5 ">
+                      <span class="badge hover-badge">
                         <i class="devicon-html5-plain"></i> Html
                       </span>
-                      <span class="badge bg-secondary hover-badge">     
+                      <span class="badge  hover-badge">     
                         <i class="devicon-css3-plain"></i> Css
                       </span>
-                      <span class="badge bg-secondary hover-badge">
+                      <span class="badge hover-badge">
                         <i class="devicon-javascript-plain"></i> Javascript
                       </span>
                     </div>
@@ -220,7 +220,7 @@
                 </div>
               </a>
             </div>
-            <!-- Stictactics -->
+            <!-- Grocery -->
             <div class="col-auto">
               <a href="https://github.com/jones21312321313213/CS243-FINAL-PROJECT.git" class="no-underline" target="_blank">
               <div class="card hover-card" style="width: 24rem;">
@@ -231,7 +231,7 @@
                     Collaboratively developed a 2-player fighting game using OOP principles, featuring unique characters, special abilities, and customizable arenas.
                   </p>
                   <div class="tech-used">
-                    <span class="badge bg-secondary hover-badge">
+                    <span class="badge hover-badge">
                       Assembly
                     </span>
                   </div>
@@ -249,7 +249,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-info text-center  ">
-    <h1>Hellos</h1>
+    <h1>© 2024 Joshua A. All Rights Reserved.</h1>
   </footer>
 
   
