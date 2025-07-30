@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="header_style.css">
   <link rel="stylesheet" type="text/css" href="hover_styles.css">
+  <link rel="stylesheet" type="text/css" href="contact_style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
@@ -29,7 +30,7 @@
                 <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
               </ul>
             </div>
-            <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded">Contact Me</button>
+            <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded" data-bs-toggle="modal" data-bs-target="#contact-me">Contact Me</button>
           </div>
         </div>
       </nav>
@@ -62,12 +63,51 @@
                             <li class="nav-item"><a href="#about-me-text" class="nav-link" data-bs-dismiss="modal" data-section="#about-me-text">About</a></li>
                              <li class="nav-item"><a href="#skills-text" class="nav-link" data-bs-dismiss="modal" data-section="#skills-text">Skills</a></li>
                             <li class="nav-item"><a href="#project" class="nav-link" data-bs-dismiss="modal" data-section="#project">Projects</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-bs-dismiss="modal" data-section="#ok">Contact</a></li>
+                             <button class="nav-link" data-bs-toggle="modal" data-bs-target="#contact-me">Contact Me</button>
                         </ul>
                     </div>
                 </div>
             </div>
           </div>
+
+
+          <!-- contact me modal -->
+          <div class="modal fade " id="contact-me" tabindex="-1" >
+            <div class="modal-dialog modal-fullscreen-sm-down modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header  d-flex flex-column align-items-center">
+                      <!-- for the envelope to be above the contact me -->
+                      <div>
+                        <i class="fa-regular fa-envelope mail"></i>
+                      </div>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <h5 id="contactTitle" class="mb-0 mx-auto">Contact Me</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    </div>
+                    <div class="modal-body contact-modal-body">
+                        <div class="name_block text-start">
+                          <div class="name ms-1"><small>Your name</small></div>
+                          <input type = "text" required name = "name" placeholder="Enter name" class="form-control w-100 mt-2 mb-2 custom-input">
+                        </div>
+
+                        <div class="email_block text-start">
+                          <div class="email ms-1"><small>Your email</small></div>
+                          <input type = "email" required name = "email" placeholder="Enter email" class="form-control w-100 mt-2 mb-2 custom-input">
+                        </div>
+
+                        <div class="message_block text-start">
+                          <div class="message ms-1"><small>Your message</small></div>
+                          <input type = "text" required name = "message" placeholder="Enter message" class="form-control w-100 mt-2 mb-2 custom-input" style  = "height:100px">
+                        </div>
+
+                      <button class="btn d-inline-flex align-items-center contact-custom-hover-invert fw-bold border border-4 border-white text-white bg-black float-start fs-6 mt-2 rounded">Send message<i class="fa-regular fa-envelope mail" id  = "send_msg"></i></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
           <!-- 2nd header -->
           <div class="collapse navbar-collapse" id="navbarNav2">
             <div class="d-flex align-items-center flex-column flex-lg-row w-100">
@@ -78,7 +118,7 @@
                 <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
               </ul>
             </div>
-            <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded">Contact Me</button>
+            <button class="btn custom-hover-invert fw-bold border border-4 border-dark text-dark bg-white float-end fs-6 rounded" data-bs-toggle="modal" data-bs-target="#contact-me">Contact Me</button>
           </div>
         </div>
       </nav>
@@ -100,7 +140,7 @@
       
       <section id = "skills">
         <div class = "container-fluid border no-select">
-          <h1 class = "mt-4 white-text" >My Skills</h1>
+          <h1 class = "mt-4 white-text" id ="skills-text" >My Skills</h1>
             <div class = "row">
               <div class = "col hover-up">  
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" class = "progLang" />

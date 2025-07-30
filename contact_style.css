@@ -1,0 +1,59 @@
+#contactTitle{
+    display: flex;
+    padding-left: 24%;
+}
+
+#send_msg{
+    margin-left: 10px;
+}
+.modal-content{
+    border-style: solid;
+    border-color: #DE3163;
+    border-width: 2px;
+    border-radius: 10px;
+    overflow: hidden;  /*this is so that bot */
+ }
+.modal-header{
+    background-color: black;
+    color: white;
+}
+.contact-modal-body{
+    background-color: black;
+}
+.custom-input::placeholder{
+    color: #555;
+    opacity: 5;
+}
+
+.name,.email,.message{
+    color: white;
+    font-weight: bolder;
+}
+
+.custom-input {
+  border: 2px solid white; /* Bootstrap blue or any custom color */
+  border-radius: 5px;         /* Optional: rounded corners */
+}
+
+
+.mail {
+  font-size: 24px;      /* controls both width and height for font icons */
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;    /* vertically center it inside the block */
+}
+
+
+
+.contact-custom-hover-invert {
+  width: 173px;
+  transition: all 0.3s ease;
+}
+
+.contact-custom-hover-invert:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+
