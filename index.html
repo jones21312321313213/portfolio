@@ -42,12 +42,20 @@
     <div class="container-fluid text-center" id="abme">
       <nav class="navbar navbar-expand-lg " id = "duplicateNavbar">
         <div class="container-fluid">
-          <button class="navbar-toggler position-fixed position-lg-absolute end-0 mt-2 me-2" 
-                  type="button" 
-                  data-bs-toggle="modal" 
+          <!-- for navbar toggler-->
+          <button class="navbar-toggler rounded-circle bg-light border-0 p-2 shadow"
+                  type="button"
+                  data-bs-toggle="modal"
                   data-bs-target="#navbarPopup"
-                  style="z-index: 1030; right: max(0.5rem, env(safe-area-inset-right))">
-              <span class="navbar-toggler-icon"></span>
+                  style="background-color: silver; position: fixed; top: 80px; right: 1rem; z-index: 1030; width: 48px; height: 48px;">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="black"
+                stroke-width="4"
+                style="width: 24px; height: 24px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </button>
 
           <!-- modal -->
@@ -183,96 +191,96 @@
       </section>
 
 
-    <section id="projects" class="mb-5">
-      <h1 class="mt-5 mb-5 text-center" id="project">Projects</h1>
-      <div class="container-fluid no-select">
-        <div class="row g-3 justify-content-around">
-          <!-- GameGo -->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <a href="https://github.com/jones21312321313213/GameGo" class="no-underline w-100" target="_blank">
-              <div class="card hover-card h-100">
-                <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="GameGo">
-                <div class="card-body">
-                  <h5 class="card-title">GameGo</h5>
-                  <p class="card-text">
-                    Developed a mobile app for gamers to discover, organize, and save favorite games using Firebase authentication and live game data from external APIs.
-                  </p>
-                  <div class="tech-used">
-                    <span class="badge hover-badge"><i class="devicon-kotlin-plain"></i> Kotlin</span>
-                    <span class="badge hover-badge"><i class="devicon-androidstudio-plain"></i> Android Studio</span>
+      <section id="projects" class="mb-5">
+        <h1 class="mt-5 mb-5 text-center" id="project">Projects</h1>
+        <div class="container-fluid no-select">
+          <div class="row g-3 justify-content-around">
+            <!-- GameGo -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <a href="https://github.com/jones21312321313213/GameGo" class="no-underline w-100" target="_blank">
+                <div class="card hover-card h-100">
+                  <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="GameGo">
+                  <div class="card-body">
+                    <h5 class="card-title">GameGo</h5>
+                    <p class="card-text">
+                      Developed a mobile app for gamers to discover, organize, and save favorite games using Firebase authentication and live game data from external APIs.
+                    </p>
+                    <div class="tech-used">
+                      <span class="badge hover-badge"><i class="devicon-kotlin-plain"></i> Kotlin</span>
+                      <span class="badge hover-badge"><i class="devicon-androidstudio-plain"></i> Android Studio</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
 
-          <!-- SticTactics -->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <a href="https://github.com/jones21312321313213/demoGame4OOP.git" class="no-underline w-100" target="_blank">
-              <div class="card hover-card h-100">
-                <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="SticTactics">
-                <div class="card-body">
-                  <h5 class="card-title">SticTactics</h5>
-                  <p class="card-text">
-                    Collaboratively developed a 2-player fighting game using OOP principles, featuring unique characters, special abilities, and customizable arenas.
-                  </p>
-                  <div class="tech-used">
-                    <span class="badge hover-badge"><i class="devicon-java-plain"></i> Java</span>
+            <!-- SticTactics -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <a href="https://github.com/jones21312321313213/demoGame4OOP.git" class="no-underline w-100" target="_blank">
+                <div class="card hover-card h-100">
+                  <img src="https://picsum.dev/200/200" class="card-img-top img-fluid" alt="SticTactics">
+                  <div class="card-body">
+                    <h5 class="card-title">SticTactics</h5>
+                    <p class="card-text">
+                      Collaboratively developed a 2-player fighting game using OOP principles, featuring unique characters, special abilities, and customizable arenas.
+                    </p>
+                    <div class="tech-used">
+                      <span class="badge hover-badge"><i class="devicon-java-plain"></i> Java</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="mini-projects" id="miniProj">
-      <div class="container-fluid no-select">
-        <h1 class="mt-4 mb-5 white-text">Mini Projects</h1>
-        <div class="row g-3 justify-content-around mb-4">
-          <!-- Converter -->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <a href="https://github.com/jones21312321313213/CS132-FINAL-PROJECT.git" class="no-underline w-100" target="_blank">
-              <div class="card hover-card h-100">
-                <img src="converteR.png" class="card-img-top img-fluid" alt="Converter">
-                <div class="card-body">
-                  <h5 class="card-title">AllBase Converter</h5>
-                  <p class="card-text">
-                    A lightweight tool built to convert numbers between decimal, binary, octal, and hexadecimal formats efficiently.
-                  </p>
-                  <div class="tech-used mt-3">
-                    <span class="badge hover-badge"><i class="devicon-html5-plain"></i> Html</span>
-                    <span class="badge hover-badge"><i class="devicon-css3-plain"></i> Css</span>
-                    <span class="badge hover-badge"><i class="devicon-javascript-plain"></i> Javascript</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Grocery -->
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <a href="https://github.com/jones21312321313213/CS243-FINAL-PROJECT.git" class="no-underline w-100" target="_blank">
-              <div class="card hover-card h-100">
-                <img src="grocery.png" class="card-img-top img-fluid" alt="Grocery">
-                <div class="card-body">
-                  <h5 class="card-title">Grocery item-list</h5>
-                  <p class="card-text">
-                    Designed a terminal-based mini system in x86 Assembly (TASM) implementing basic CRUD operations, user login, and verification logic.
-                  </p>
-                  <div class="tech-used">
-                    <span class="badge hover-badge">Assembly</span>
-                  </div>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+
+
+      <section class="mini-projects" id="miniProj">
+        <div class="container-fluid no-select">
+          <h1 class="mt-4 mb-5 white-text">Mini Projects</h1>
+          <div class="row g-3 justify-content-around mb-4">
+            <!-- Converter -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <a href="https://github.com/jones21312321313213/CS132-FINAL-PROJECT.git" class="no-underline w-100" target="_blank">
+                <div class="card hover-card h-100">
+                  <img src="converteR.png" class="card-img-top img-fluid" alt="Converter">
+                  <div class="card-body">
+                    <h5 class="card-title">AllBase Converter</h5>
+                    <p class="card-text">
+                      A lightweight tool built to convert numbers between decimal, binary, octal, and hexadecimal formats efficiently.
+                    </p>
+                    <div class="tech-used mt-3">
+                      <span class="badge hover-badge"><i class="devicon-html5-plain"></i> Html</span>
+                      <span class="badge hover-badge"><i class="devicon-css3-plain"></i> Css</span>
+                      <span class="badge hover-badge"><i class="devicon-javascript-plain"></i> Javascript</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Grocery -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <a href="https://github.com/jones21312321313213/CS243-FINAL-PROJECT.git" class="no-underline w-100" target="_blank">
+                <div class="card hover-card h-100">
+                  <img src="grocery.png" class="card-img-top img-fluid" alt="Grocery">
+                  <div class="card-body">
+                    <h5 class="card-title">Grocery item-list</h5>
+                    <p class="card-text">
+                      Designed a terminal-based mini system in x86 Assembly (TASM) implementing basic CRUD operations, user login, and verification logic.
+                    </p>
+                    <div class="tech-used">
+                      <span class="badge hover-badge">Assembly</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
   </main>
